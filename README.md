@@ -7,6 +7,9 @@ https://badges.debian.net/badges/debian/unstable/fastp/version.svg)](https://pac
 [![Build Status](https://travis-ci.org/OpenGene/fastp.svg?branch=master)](https://travis-ci.org/OpenGene/fastp)
 # fastp
 A tool designed to provide fast all-in-one preprocessing for FastQ files. This tool is developed in C++ with multithreading supported to afford high performance. 
+
+### Edit: this version allows for long trimming of reads up to 2000 bp
+
 * [features](#features)
 * [simple usage](#simple-usage)
 * [examples of report](#examples-of-report)
