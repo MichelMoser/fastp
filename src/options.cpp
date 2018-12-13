@@ -132,17 +132,17 @@ bool Options::validate() {
         thread = 16;
     }
 
-    if(trim.front1 < 0 || trim.front1 > 30)
-        error_exit("trim_front1 (--trim_front1) should be 0 ~ 30, suggest 0 ~ 4");
+    if(trim.front1 < 0 || trim.front1 > 2000)
+        error_exit("trim_front1 (--trim_front1) should be 0 ~ 2000, suggest 0 ~ 4");
 
-    if(trim.tail1 < 0 || trim.tail1 > 100)
-        error_exit("trim_tail1 (--trim_tail1) should be 0 ~ 100, suggest 0 ~ 4");
+    if(trim.tail1 < 0 || trim.tail1 > 2000)
+        error_exit("trim_tail1 (--trim_tail1) should be 0 ~ 2000, suggest 0 ~ 4");
 
-    if(trim.front2 < 0 || trim.front2 > 30)
-        error_exit("trim_front2 (--trim_front2) should be 0 ~ 30, suggest 0 ~ 4");
+    if(trim.front2 < 0 || trim.front2 > 2000)
+        error_exit("trim_front2 (--trim_front2) should be 0 ~ 2000, suggest 0 ~ 4");
 
-    if(trim.tail2 < 0 || trim.tail2 > 100)
-        error_exit("trim_tail2 (--trim_tail2) should be 0 ~ 100, suggest 0 ~ 4");
+    if(trim.tail2 < 0 || trim.tail2 > 2000)
+        error_exit("trim_tail2 (--trim_tail2) should be 0 ~ 2000, suggest 0 ~ 4");
 
     if(qualfilter.qualifiedQual - 33 < 0 || qualfilter.qualifiedQual - 33 > 93)
         error_exit("qualitified phred (--qualified_quality_phred) should be 0 ~ 93, suggest 10 ~ 20");
